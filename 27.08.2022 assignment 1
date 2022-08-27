@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+	char str[10];
+	int i,j,len;
+	gets(str);
+	len = strlen(str);
+	for(i=1;i<=len;i++)
+	{
+		for(j=0;j<=len-i;j++)
+		{
+			int k = j+i-1;
+			int a;
+			for(a=j;a<=k;a++)
+			{
+				printf("%c",str[a]);
+			}
+			printf("\n");
+		}
+	}
+	return 0;
+}
